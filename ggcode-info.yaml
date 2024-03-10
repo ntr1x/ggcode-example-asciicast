@@ -1,0 +1,12 @@
+name: ggcode-example-asciicast
+actions:
+- name: run/record
+  path: run/record.luau
+repositories:
+- name: central
+  uri: git@github.com:ntr1x/ggcode-repo-central.git
+- name: autocast
+  uri: git@github.com:ntr1x/ggcode-repo-autocast.git
+targets:
+- name: '@target'
+  path: target
