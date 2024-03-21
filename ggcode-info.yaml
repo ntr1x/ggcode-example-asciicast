@@ -1,12 +1,15 @@
-name: ggcode-example-asciicast
+name: example-asciicast
 actions:
-- name: run/record
-  path: run/record.luau
+- name: record
+  path: actions/record.luau
+scrolls:
+- name: scripts
+  path: scrolls/scripts
 repositories:
-- name: central
-  uri: git@github.com:ntr1x/ggcode-repo-central.git
-- name: autocast
-  uri: git@github.com:ntr1x/ggcode-repo-autocast.git
+- name: core
+  uri: git@github.com:ntr1x/ggcode-repo-core.git
+- name: asciicast
+  uri: git@github.com:ntr1x/ggcode-repo-asciicast.git
 targets:
 - name: '@target'
   path: target

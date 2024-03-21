@@ -1,14 +1,18 @@
-local ggcode = require('ggcode')
-local autocast = require('autocast')
+local ggcode = require('core/ggcode')
+local asciicast = require('asciicast')
 
-local session = autocast.session()
+local session = asciicast.session()
+
+print('Generating scripts ...')
+
+ggcode.generate "@/scripts" { target = '@target'}
 
 print('Recording `ggcode --help` ...')
 
-ggcode.generate "autocast/autocast" {
+ggcode.generate "asciicast/asciicast" {
     target = '@target',
     variables = {
-        bundle = { name = 'ggcode__help' },
+        bundle = { name = 'cast/ggcode__help' },
         data = {
             session.prompt "/tmp" {
                 path = '~',
@@ -22,10 +26,10 @@ ggcode.generate "autocast/autocast" {
 
 print('Recording `ggcode repository --help` ...')
 
-ggcode.generate "autocast/autocast" {
+ggcode.generate "asciicast/asciicast" {
     target = '@target',
     variables = {
-        bundle = { name = 'ggcode__repository__help' },
+        bundle = { name = 'cast/ggcode__repository__help' },
         data = {
             session.prompt "/tmp" {
                 path = '~',
@@ -39,10 +43,10 @@ ggcode.generate "autocast/autocast" {
 
 print('Recording `ggcode scroll --help` ...')
 
-ggcode.generate "autocast/autocast" {
+ggcode.generate "asciicast/asciicast" {
     target = '@target',
     variables = {
-        bundle = { name = 'ggcode__scroll__help' },
+        bundle = { name = 'cast/ggcode__scroll__help' },
         data = {
             session.prompt "/tmp" {
                 path = '~',
@@ -56,10 +60,10 @@ ggcode.generate "autocast/autocast" {
 
 print('Recording `ggcode action --help` ...')
 
-ggcode.generate "autocast/autocast" {
+ggcode.generate "asciicast/asciicast" {
     target = '@target',
     variables = {
-        bundle = { name = 'ggcode__action__help' },
+        bundle = { name = 'cast/ggcode__action__help' },
         data = {
             session.prompt "/tmp" {
                 path = '~',
@@ -73,10 +77,10 @@ ggcode.generate "autocast/autocast" {
 
 print('Recording `ggcode target --help` ...')
 
-ggcode.generate "autocast/autocast" {
+ggcode.generate "asciicast/asciicast" {
     target = '@target',
     variables = {
-        bundle = { name = 'ggcode__target__help' },
+        bundle = { name = 'cast/ggcode__target__help' },
         data = {
             session.prompt "/tmp" {
                 path = '~',
@@ -90,10 +94,10 @@ ggcode.generate "autocast/autocast" {
 
 print('Recording `ggcode init --help` ...')
 
-ggcode.generate "autocast/autocast" {
+ggcode.generate "asciicast/asciicast" {
     target = '@target',
     variables = {
-        bundle = { name = 'ggcode__init__help' },
+        bundle = { name = 'cast/ggcode__init__help' },
         data = {
             session.prompt "/tmp" {
                 path = '~',
@@ -107,10 +111,10 @@ ggcode.generate "autocast/autocast" {
 
 print('Recording `ggcode install --help` ...')
 
-ggcode.generate "autocast/autocast" {
+ggcode.generate "asciicast/asciicast" {
     target = '@target',
     variables = {
-        bundle = { name = 'ggcode__install__help' },
+        bundle = { name = 'cast/ggcode__install__help' },
         data = {
             session.prompt "/tmp" {
                 path = '~',
@@ -124,10 +128,10 @@ ggcode.generate "autocast/autocast" {
 
 print('Recording `ggcode generate --help` ...')
 
-ggcode.generate "autocast/autocast" {
+ggcode.generate "asciicast/asciicast" {
     target = '@target',
     variables = {
-        bundle = { name = 'ggcode__generate__help' },
+        bundle = { name = 'cast/ggcode__generate__help' },
         data = {
             session.prompt "/tmp" {
                 path = '~',
@@ -141,10 +145,10 @@ ggcode.generate "autocast/autocast" {
 
 print('Recording `ggcode run --help` ...')
 
-ggcode.generate "autocast/autocast" {
+ggcode.generate "asciicast/asciicast" {
     target = '@target',
     variables = {
-        bundle = { name = 'ggcode__run__help' },
+        bundle = { name = 'cast/ggcode__run__help' },
         data = {
             session.prompt "/tmp" {
                 path = '~',

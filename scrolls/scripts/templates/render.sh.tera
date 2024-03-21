@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mkdirp gif
+
+for file in ./cast/*.cast
+do
+  agg "$file" "./gif/$(basename $file .cast).gif"
+done
