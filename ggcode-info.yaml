@@ -5,6 +5,7 @@ actions:
 scrolls:
 - name: scripts
   path: scrolls/scripts
+  about: Builds bash scripts
 repositories:
 - name: core
   uri: git@github.com:ntr1x/ggcode-repo-core.git
